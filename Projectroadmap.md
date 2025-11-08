@@ -1,7 +1,7 @@
-- [ x] Upload project to class spreadsheet
-- [ x] Join class organization
-- [ x] Create Read.me
-- [ x] Search for a related existing repository on Github and clone it
-- [ x] Upload it to Visual Studio
-- [ x] Run the code and locate the problems
+- [x] Upload project to class spreadsheet
+- [x] Join class organization
+- [x] Create Read.me
+- [x] Search for a related existing repository on Github and clone it
+- [x] Upload it to Visual Studio
+- [x] Run the code and locate the problems
 - [ ] Report any issues and how to fix them
