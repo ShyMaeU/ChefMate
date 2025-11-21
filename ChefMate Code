@@ -1,0 +1,55 @@
+import random 
+print("Welcome to ChefMate!")
+print("Let's make a desert together!\n")
+#Step 1: Ingredient options
+base_options = ["flour", "oats", "pancake mix"]
+sweetner_options = ["sugar", "honey", "maple syrup", "brown sugar"]
+flavor_options = ["cinnamon", "vanilla", "chocolate", "strawberry"]
+topping_options = ["chocolate chips", "nuts", "fresh fruit", "whipped cream"]
+
+#Step 2: Let the user choose
+print("Choose your base ingredient:")
+print("Options:", ", ".join(base_options))
+base = input("Enter your choice: ").strip().lower()
+
+print("\nChoose your sweetener:")
+print("Options:", ", ".join(sweetner_options))
+sweetener = input("Enter your choice: ").strip().lower()
+
+print("\nChoose your flavor:")
+print("Options:", ", ".join(flavor_options))
+flavor = input("Enter your choice: ").strip().lower()
+
+print("\nChoose your topping:")
+print("Options:", ", ".join(topping_options))
+topping = input("Enter your choice: ").strip().lower()
+
+#Step 3: Random cooking style
+cooking_styles = ["baked", "whipped", "no-bake", "chilled"]
+cooking_style = random.choice(cooking_styles)
+
+#Step 4: Generate recipe name
+adjectives = ["Delightful", "Scrumptious", "Heavenly", "Dreamy"]
+recipe_name = f"{random.choice(adjectives)} {flavor.capitalize()} {base.capitalize()} Surprise"
+
+#Step 5: Display the recipe
+print("\nHere's your custom dessert recipe!")
+print(f"Recipe Name: {recipe_name}")
+print(f"Base Ingredient: {base}, {sweetener}, {flavor}, topped with {topping}, prepared in a {cooking_style} style.")
+print(f"Instructions:")
+print(f"1. Combine the {base} with {sweetener} and {flavor}.")
+print(f"2. Add a hint of {flavor} and {topping} on top.")
+print(f"3. {cooking_style.title()} everything for 20 minutes.")
+print(f"4. Serve and enjoy your {recipe_name}!")
+
+#Step 6: Reactions = [
+reactions = [
+    "Yum! This was delicious!",
+    "Oops it stuck to the pan, but still tasty!",
+    "This is going to be my new favorite dessert!",
+    "It's a bit too sweet for my taste, but still good!",
+    "Wow, I didn't expect it to turn out this good!"
+]
+print("\nHow do you feel about your dessert?")
+for i, reaction in enumerate(reactions, 1):
+    print(f"{i}. {reaction}")
