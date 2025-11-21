@@ -4,4 +4,7 @@
 - [x] Search for a related existing repository on Github and clone it
 - [x] Upload it to Visual Studio
 - [x] Run the code and locate the problems
-- [ ] Report any issues and how to fix them
+- [x] Report any issues and how to fix them
+- [x] Create code
+- [ ] Add more ingreident categories
+- [ ] Use flask to build a recipe website with this code
