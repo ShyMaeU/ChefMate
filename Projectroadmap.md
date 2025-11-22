@@ -8,3 +8,4 @@
 - [x] Create code
 - [ ] Add more ingreident categories
 - [ ] Use flask to build a recipe website with this code
+- [ ] Add themes cookies, cupcakes, and cakes
