@@ -53,3 +53,43 @@ reactions = [
 print("\nHow do you feel about your dessert?")
 for i, reaction in enumerate(reactions, 1):
     print(f"{i}. {reaction}")
+themes = {
+    "cookies" : { 
+        "base": ["flour", "oats", "almond flour"],
+        "sweetener": ["sugar", "honey", "brown sugar"],
+        "fat": ["butter", "coconut oil", "margarine"],
+        "mix-ins": ["chocolate chips", "nuts", "dried fruit"]
+
+    },
+
+    "cupcakes" : {
+        "base": ["flour", "cake mix", "almond flour"],
+        "sweetener": ["sugar", "honey", "maple syrup"],
+        "flavor": ["vanilla", "chocolate", "red velvet", "lemon"],
+        "fat": ["butter", "vegetable oil", "yogurt"],
+        "toppings": ["frosting", "sprinkles", "whipped cream"]
+    
+    },
+
+    "brownies" : {
+        "base": ["flour", "cocoa powder", "almond flour"],
+        "sweetener": ["sugar", "honey", "maple syrup"],
+        "fat": ["butter", "coconut oil", "vegetable oil"],
+        "mixins": ["nuts", "chocolate chips", "caramel bits"],
+        "chocolate": ["dark chocolate", "milk chocolate", "white chocolate"],
+        "toppings": ["powdered sugar", "whipped cream", "ice cream"]
+    }
+}
+print("Choose a dessert theme:")
+for theme in themes:
+    print("-", theme)
+chosen_theme = input("Enter your choice: ").strip().lower()
+if chosen_theme not in themes:
+    print("Sorry, that theme is not available. Please choose from the listed themes.")
+selected_theme = themes[chosen_theme]
+recipes = {}
+for category, items in selected_theme.items():
+    recipes[category] = random.choice(items)
+print(f"\nHere's your {chosen_theme} recipe:\n")
+for category, item in recipes.items():
+    print(f"{category.capitalize()}: {item}")
