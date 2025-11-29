@@ -6,6 +6,6 @@
 - [x] Run the code and locate the problems
 - [x] Report any issues and how to fix them
 - [x] Create code
-- [ ] Add more ingreident categories
+- [x] Add more ingreident categories
 - [ ] Use flask to build a recipe website with this code
-- [ ] Add themes cookies, cupcakes, and cakes
+- [x] Add themes cookies, cupcakes, and cakes
