@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Dessert</title>
+</head>
+<body>
+    <h1>Your {{ theme }} Recipe!</h1>
+
+    {% for category, item in choices.items() %}
+        <p><strong>{{ category.capitalize() }}:</strong> {{ item }}</p>
+    {% endfor %}
+
+    <br>
+    <a href="/">Make another dessert</a>
+</body>
+</html>
